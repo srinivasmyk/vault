@@ -16,8 +16,43 @@
   </head>
   <body>
     <!-- TOP NAVIGATION -->
+
+    <header class="header">
+        <nav class="nav">
+          <img
+            src="img/logo.png"
+            alt="Bankist logo"
+            class="nav__logo"
+            id="logo"
+          />
+          <ul class="nav__links">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section-1">Transfer Money</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link ops" href="#section-2">Loans</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section-3">Account closure</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Open account</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link btn-primary nav__link--btn btn--show-modal login" 
+              href="#" >Login</a>
+            </li> -->
+          </ul>
+        </nav>
+
+      </header>
  
-<section id="section-1">
+<section class="" id="section-1">
 <!-- BALANCE -->
 <div class="balance">
     <div>
@@ -29,10 +64,11 @@
     <p class="balance__value">0000€</p>
   </div>
 
-</section>
+
       
-      <!-- MOVEMENTS -->
-      <div class="movements">
+
+    <!-- MOVEMENTS -->
+    <div class="movements">
         <div class="movements__row">
           <div class="movements__type movements__type--deposit">2 deposit</div>
           <div class="movements__date">3 days ago</div>
@@ -47,8 +83,11 @@
         </div>
       </div>
 
-      <!-- SUMMARY -->
-      <div class="summary">
+      
+
+
+    <!-- SUMMARY -->
+    <div class="summary">
         <p class="summary__label">In</p>
         <p class="summary__value summary__value--in">0000€</p>
         <p class="summary__label">Out</p>
@@ -58,8 +97,11 @@
         <button class="btn--sort">&downarrow; SORT</button>
       </div>
 
-      <!-- OPERATION: TRANSFERS -->
-      <div class="operation operation--transfer">
+</section>
+      
+<section class="section" id="section-2">
+    <!-- OPERATION: TRANSFERS -->
+    <div class="operation operation--transfer">
         <h2>Transfer money</h2>
         <form class="form form--transfer">
           <input type="text" class="form__input form__input--to" />
@@ -69,8 +111,11 @@
           <label class="form__label">Amount</label>
         </form>
       </div>
+</section>
+      
 
-      <!-- OPERATION: LOAN -->
+     <section class="section" id="section-3">
+         <!-- OPERATION: LOAN -->
       <div class="operation operation--loan">
         <h2>Request loan</h2>
         <form class="form form--loan">
@@ -79,9 +124,11 @@
           <label class="form__label form__label--loan">Amount</label>
         </form>
       </div>
+     </section>
 
       <!-- OPERATION: CLOSE -->
-      <div class="operation operation--close">
+      <section class="section" id="section-4">
+        <div class="operation operation--close section" >
         <h2>Close account</h2>
         <form class="form form--close">
           <input type="text" class="form__input form__input--user" />
@@ -94,25 +141,8 @@
           <label class="form__label">Confirm user</label>
           <label class="form__label">Confirm PIN</label>
         </form>
-      </div>
-
-      <!-- LOGOUT TIMER -->
-      <p class="logout-timer">
-        You will be logged out in <span class="timer">05:00</span>
-      </p>
+      </div></section>
     
-
-<script>
-function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("text");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
-</script>
  
     </main> 
 
