@@ -18,7 +18,25 @@ const section1 = document.querySelector('#section--1');
 const nav = document.querySelector('.nav');
 const loginOpenAccount =document.querySelector('.login-openAccount');
 
+///////////Dummy user data///////
 
+let [user] = [{
+  email: "srini1@gmail.com",
+  password:12
+}, 
+{
+  email: "srini2@gmail.com",
+password:13
+}];
+
+//////////////////////////
+
+//////////user validation///////////
+validateUser(){
+  if(document.getElementById("login-form").elements.item(0).value===user.email&&document.getElementById("login-form").elements.item(0).value===user.password);
+}
+
+//////////////////////////////
 
 const openModal = function (e) {
   //e.preventDefault();
@@ -67,7 +85,7 @@ document.addEventListener('keydown', function (e) {
 
 // loginOpenAccount.addEventListener('click',function(e){
 //   document.querySelector('.login-modal-login').classList.add('hidden');
-// });
+// });hjkhg
 
 
 ////////////////////////
