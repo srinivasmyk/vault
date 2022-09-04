@@ -137,13 +137,14 @@ section1.scrollIntoView({behavior:'smooth'});
 
 document.querySelector('.nav__links').addEventListener
 ('click',function(e){
-  const target = e.target;
+  if(!e.target.classList.contains('ops')) {
+  
   if(target.classList.contains('nav__link')){
     e.preventDefault();
       const id = target.getAttribute('href');
       document.querySelector(id).scrollIntoView({behavior:'smooth'});
   }
-
+  }
 });
 
 
