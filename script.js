@@ -41,7 +41,7 @@ password:14
 
 //////////user validation///////////
 function validateUser(){
-const userEmail=document.querySelector('#userEmail');
+
   if(userEmail==="srini3@gmail.com" && userPassword==="14"){
     //passing user and account objects:
 aptrinsic("identify",
