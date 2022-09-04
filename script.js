@@ -18,6 +18,9 @@ const section1 = document.querySelector('#section--1');
 const nav = document.querySelector('.nav');
 const loginOpenAccount =document.querySelector('.login-openAccount');
 const logout =document.querySelector('logout');
+const userEmail=document.querySelector('#userEmail');
+const userPassword=document.querySelector('#userPassword');
+
 
 ///////////Dummy user data///////dfgdfg
 
@@ -38,7 +41,8 @@ password:14
 
 //////////user validation///////////
 function validateUser(){
-  if(document.getElementById("login-form").elements.item(0).value==="srini3@gmail.com"&&document.getElementById("login-form").elements.item(0).value==="14"){
+const userEmail=document.querySelector('#userEmail');
+  if(userEmail==="srini3@gmail.com" && userPassword==="14"){
     //passing user and account objects:
 aptrinsic("identify",
 {
