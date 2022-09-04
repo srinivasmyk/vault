@@ -62,6 +62,10 @@ aptrinsic("identify",
   "name":"International Business Machine",
   "Program": "Platinum" // flat custom attributes
 });
+return true;
+  }
+  else{
+    return false;
   }
 };
 
