@@ -32,9 +32,9 @@ password:13
 //////////////////////////
 
 //////////user validation///////////
-validateUser(){
+function validateUser(){
   if(document.getElementById("login-form").elements.item(0).value===user.email&&document.getElementById("login-form").elements.item(0).value===user.password);
-}
+};
 
 //////////////////////////////
 
