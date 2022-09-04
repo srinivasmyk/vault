@@ -388,7 +388,7 @@ observer.unobserve(entry.target);
 
   ////////Logout handling//////////
 
-  logout.addEventListener('click',()=>{
+  logout.addEventListener('click',function(){
     window.aptrinsic('reset');
   })
   
