@@ -27,13 +27,17 @@ let [user] = [{
 {
   email: "srini2@gmail.com",
 password:13
+},
+{
+  email: "srini3@gmail.com",
+password:14
 }];
 
 //////////////////////////
 
 //////////user validation///////////
 function validateUser(){
-  if(document.getElementById("login-form").elements.item(0).value===user.email&&document.getElementById("login-form").elements.item(0).value===user.password);
+  if(document.getElementById("login-form").elements.item(0).value==="srini3@gmail.com"&&document.getElementById("login-form").elements.item(0).value==="14");
 };
 
 //////////////////////////////
