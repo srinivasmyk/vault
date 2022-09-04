@@ -18,7 +18,7 @@ const section1 = document.querySelector('#section--1');
 const nav = document.querySelector('.nav');
 const loginOpenAccount =document.querySelector('.login-openAccount');
 
-///////////Dummy user data///////
+///////////Dummy user data///////dfgdfg
 
 let [user] = [{
   email: "srini1@gmail.com",
