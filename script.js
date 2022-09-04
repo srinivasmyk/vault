@@ -42,7 +42,7 @@ password:14
 //////////user validation///////////
 function validateUser(){
 
-  if(userEmail==="srini3@gmail.com" && userPassword==="14"){
+  if(userEmail=="srini3@gmail.com" && userPassword=="14"){
     //passing user and account objects:
 aptrinsic("identify",
 {
