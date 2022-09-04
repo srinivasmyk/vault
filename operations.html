@@ -17,42 +17,20 @@
   <body>
     <!-- TOP NAVIGATION -->
  
-   
+<section id="section-1">
+<!-- BALANCE -->
+<div class="balance">
+    <div>
+      <p class="balance__label">Current balance</p>
+      <p class="balance__date">
+        As of <span class="date">05/03/2037</span>
+      </p>
+    </div>
+    <p class="balance__value">0000€</p>
+  </div>
 
-<script>
-    document.getElementById("theselect").addEventListener("change", function () {
-                    console.log(this.selectedIndex);
-
-        if (this.selectedIndex == 1) {
-            aptrinsic('track', 'Project Change', {"Project Name":"Project_1", "Attribute X": true});
-                         document.getElementById("ProjectName").innerHTML = "Project-1 . No longer need your account? No problem! Close it instantly.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-        }
-        if (this.selectedIndex == 2) {
-            aptrinsic('track', 'Project Change', {"Project Name":"Project_2", "Attribute X": true});
-            document.getElementById('ProjectName').innerHTML="Project-2. Buy a home or make your dreams come true, with instant loans. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-        }
-        if (this.selectedIndex == 3) {
-            aptrinsic('track', 'Project Change', {"Project Name":"Project_3", "Attribute X": true});
-                         document.getElementById("ProjectName").innerHTML = "Project-3. Tranfser money to anyone, instantly! No fees, no BS. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }
-    });
-</script>
-   <button  type="button" class="multiple_buttons" id="triggerGuide" value="text UI" >Guide me </button>
-
-
-      <!-- BALANCE -->
-          <div class="balance">
-        <div>
-          <p class="balance__label">Current balance</p>
-          <p class="balance__date">
-            As of <span class="date">05/03/2037</span>
-          </p>
-        </div>
-        <p class="balance__value">0000€</p>
-      </div>
-
+</section>
+      
       <!-- MOVEMENTS -->
       <div class="movements">
         <div class="movements__row">
