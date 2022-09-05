@@ -18,8 +18,7 @@ const section1 = document.querySelector('#section--1');
 const nav = document.querySelector('.nav');
 const loginOpenAccount =document.querySelector('.login-openAccount');
 const logout =document.querySelector('logout');
-const userEmail=document.querySelector('#userEmail').value;
-const userPassword=document.querySelector('#userPassword').value;
+
 
 
 
