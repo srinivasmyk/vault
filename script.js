@@ -142,15 +142,15 @@ document.querySelector(".btn--close-cookie").addEventListener('click',function()
 ////scrolll
 
 
-btnScrollTo.addEventListener('click', (e) =>{
-  const s1Cords = section1.getBoundingClientRect();
-// window.scrollTo({
-//   left: s1Cords.left + window.pageXOffset,
-//   top: s1Cords.top + window.pageYOffset,
-//   behavior: 'smooth',
+// btnScrollTo.addEventListener('click', (e) =>{
+//   const s1Cords = section1.getBoundingClientRect();
+// // window.scrollTo({
+// //   left: s1Cords.left + window.pageXOffset,
+// //   top: s1Cords.top + window.pageYOffset,
+// //   behavior: 'smooth',
+// // });
+// section1.scrollIntoView({behavior:'smooth'});
 // });
-section1.scrollIntoView({behavior:'smooth'});
-});
 
 ///////page navigation///////
 
