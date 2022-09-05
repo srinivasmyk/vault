@@ -22,7 +22,7 @@ let [user] = [{
     var userEmail=document.getElementById('userEmail').value;
 var userPassword=document.getElementById('userPassword').value;
   ////////
-  console.log(userEmail,userPassword);
+  console.log("email"+ userEmail+ "pwd :"+userPassword);
     if(userEmail=="srini@gmail.com"){
       //passing user and account objects:
   aptrinsic("identify",
