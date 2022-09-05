@@ -104,7 +104,7 @@ btnsOpenModal.forEach(btn  => btn.addEventListener('click', function(e){
 
 
 btnCloseModal.addEventListener('click',closeModal);
-btnCloseLoginModal.addEventListener('click',closeLoginModal);
+//btnCloseLoginModal.addEventListener('click',closeLoginModal);
 overlay.addEventListener('click', closeModal);
 
 
