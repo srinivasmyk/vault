@@ -17,10 +17,11 @@ let [user] = [{
   
   ///temp PX identify
   
-  var userEmail=document.getElementById('userEmail').value;
+  
+  function validateUser(){
+    var userEmail=document.getElementById('userEmail').value;
 var userPassword=document.getElementById('userPassword').value;
   ////////
-  function validateUser(){
   console.log(userEmail,userPassword);
     if(userEmail=="srini@gmail.com"){
       //passing user and account objects:
