@@ -17,7 +17,7 @@ const  btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
 const nav = document.querySelector('.nav');
 const loginOpenAccount =document.querySelector('.login-openAccount');
-const logout =document.querySelector('logout');
+const logout =document.querySelector('.logout');
 
 
 
