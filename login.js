@@ -17,8 +17,8 @@ let [user] = [{
   
   ///temp PX identify
   
-  const userEmail=document.getElementById('userEmail').value;
-const userPassword=document.getElementById('userPassword').value;
+  var userEmail=document.getElementById('userEmail').value;
+var userPassword=document.getElementById('userPassword').value;
   ////////
   function validateUser(){
   console.log(userEmail,userPassword);
