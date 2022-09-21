@@ -1,5 +1,6 @@
 'use strict';
 
+aptrinsic('set', 'globalContext', {"version":565, "name":"ops"});
 const account1 = {
     owner: 'user2 2',
     movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],

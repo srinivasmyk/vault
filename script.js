@@ -22,7 +22,7 @@ const logout =document.querySelector('.logout');
 
 
 
-
+aptrinsic('set', 'globalContext', {"version":555, "name":"Vault"});
 
 
 //////////////////////////////
