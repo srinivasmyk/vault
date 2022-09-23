@@ -25,10 +25,11 @@ const getUserData= ()=>{
     sendHTTPRequest('GET','https://api.aptrinsic.com/v1/accounts').then(responseData =>{
        
         accounts=responseData;
-        console.log(accounts);
+        console.log(typeof(accounts))
+        console.log(accounts.accounts[1].name);
         // 
-        accounts.accounts.forEach(element => {
-            accountDisplay.innerHTML="a";
+        accounts.forEach(element => {
+            accountDisplay.innerHTML=accounts.accounts.name;
         });
         
     })
