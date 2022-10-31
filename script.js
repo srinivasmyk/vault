@@ -20,6 +20,10 @@ const loginOpenAccount =document.querySelector('.login-openAccount');
 const logout =document.querySelector('.logout');
 
 
+function getTypedValue(){
+    var result= getElementById("bankSearch").value;
+    aptrinsic('track',"bankistSearch",{"searchTerm":result});
+}
 
 
 aptrinsic('set', 'globalContext', {"version":555, "name":"Vault"});
