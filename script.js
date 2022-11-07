@@ -26,7 +26,7 @@ function getTypedValue(){
 }
 
 
-aptrinsic('set', 'globalContext', {"version":555, "name":"Vault"});
+//aptrinsic('set', 'globalContext', {"version":555, "name":"Vault"});
 
 
 //////////////////////////////
