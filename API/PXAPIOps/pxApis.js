@@ -32,6 +32,7 @@ const getUserData= ()=>{
         // 
         accounts.accounts.forEach(element => {
            // accountDisplay.innerHTML=accounts.accounts.name;
+            console.log(element);
             accountDisplay.innerHTML=element.name;
             
         });
