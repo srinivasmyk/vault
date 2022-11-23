@@ -29,7 +29,7 @@ const getUserData= ()=>{
         console.log(accounts.accounts[1].name);
         // 
         accounts.forEach(element => {
-            accountDisplay.innerHTML=accounts.accounts.name;
+            accountDisplay.innerHTML=accounts.accounts[1].name;
         });
         
     })
