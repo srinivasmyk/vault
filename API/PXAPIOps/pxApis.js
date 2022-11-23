@@ -32,8 +32,14 @@ const getUserData= ()=>{
         // 
         accounts.accounts.forEach(element => {
            // accountDisplay.innerHTML=accounts.accounts.name;
-            console.log(element);
-            accountDisplay.innerHTML=element.name;
+//             console.log(element);
+//             accountDisplay.innerHTML=>element.name;
+            console.log(element.firstName);
+    let para = document.createElement("li");
+    let node = document.createTextNode(element.name);
+    para.appendChild(node);
+    if(element.name!="")
+    accountDisplay.appendChild(para);
             
         });
         
