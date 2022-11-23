@@ -2,7 +2,6 @@ body{
     background-color: #4c5264;
 }
 *{
-    margin:0;
-    padding:0;
+   
     box-sizing: border-box;
 }
