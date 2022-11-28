@@ -21,9 +21,21 @@
       var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
       var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
     })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-KBGIQSQYV18C-2");
+   
     
   </script>
   <!-- Gainsight PX Tag-->
+    <script>
+      aptrinsic('track','testNestedObject',{"nObject":{
+      "name":"Ram",
+      "age":27,
+      "vehicles": {
+         "car":"limousine",
+         "bike":"ktm-duke",
+         "plane":"lufthansa"
+      }
+   }})
+      </script>
   </head>
   <body>
     <header class="header">
