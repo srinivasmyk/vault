@@ -44,7 +44,7 @@ var userPassword=document.getElementById('userPassword').value;
     "Program": "Platinum" // flat custom attributes
   });
   
-  return true;
+ // return true;
     }
  
   };
