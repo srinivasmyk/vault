@@ -25,7 +25,7 @@ var userPassword=document.getElementById('userPassword').value;
   console.log("email"+ userEmail+ "pwd :"+userPassword);
     if(userEmail=="srini@gmail.com"){
       //passing user and account objects:
-  aptrinsic("identify",
+         window.setTimeout(aptrinsic("identify",
   {
   //User Fields
     "id": "unique-user-id", // Required for logged in app users
@@ -42,7 +42,8 @@ var userPassword=document.getElementById('userPassword').value;
     "id":"IBM", //Required
     "name":"International Business Machine",
     "Program": "Platinum" // flat custom attributes
-  });
+  });, 2000);
+  
   return true;
     }
   return false;
