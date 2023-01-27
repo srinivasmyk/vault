@@ -43,8 +43,22 @@ var userPassword=document.getElementById('userPassword').value;
 //     "name":"International Business Machine",
 //     "Program": "Platinum" // flat custom attributes
 //   });
-        aptrinsic('identify', {"id": "ail.c"})
+       
+        //aptrinsic('identify', {"id": "ail.c"})
 
+        analytics.group("0e8c78ea9d97a7b8185e8632", {
+  name: "Initech",
+  industry: "Technology",
+  employees: 329,
+  plan: "enterprise",
+  "total billed": 830
+});
+        analytics.identify("97980cfea0067", {
+  name: "Peter Gibbons",
+  email: "peter@example.com",
+  plan: "premium",
+  logins: 5
+});
   
  return true;
     }
