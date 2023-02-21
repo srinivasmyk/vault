@@ -89,7 +89,7 @@ message.textContent='we use cookie for improved service';
 message.innerHTML='we use cookie for improved service . <button class="btn btn--close-cookie">Got it!!</button>';
 
 //header.prepend(message);
-header.append(message);
+//header.append(message);
 
 ////removing
 document.querySelector(".btn--close-cookie").addEventListener('click',function(){
