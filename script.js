@@ -62,9 +62,9 @@ btnsOpenModal.forEach(btn  => btn.addEventListener('click', function(e){
 }));
 
 
-btnCloseModal.addEventListener('click',closeModal);
+//btnCloseModal.addEventListener('click',closeModal);
 //btnCloseLoginModal.addEventListener('click',closeLoginModal);
-overlay.addEventListener('click', closeModal);
+//overlay.addEventListener('click', closeModal);
 
 
 document.addEventListener('keydown', function (e) {
