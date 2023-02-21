@@ -44,6 +44,14 @@
   </script>
   </head>
   <body>
+    <script>
+      var c=o;
+      document.body.addEventListener('click',clicked());
+      function clicked(){
+        aptrinsic('track','homePageClicked');
+        c++;
+      }
+    </script>
     <a href="#/home">fragment identifier #</a> <br>
        <a href="/operations">operations /</a> 
     
