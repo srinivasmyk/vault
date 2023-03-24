@@ -2,6 +2,11 @@ body{
     background-color: #4c5264;
 }
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333; 
