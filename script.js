@@ -384,7 +384,7 @@ function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
         let endTime = Date.now();
         let secondsOnPage = (endTime - this.startTime) / 1000;
           
-        if (secondsOnPage%5=0) {
+        if (secondsOnPage%5==0) {
           window.aptrinsic('track', 'timeOnPage', {
             'pageName': this.pageName,
             'seconds': 5,
