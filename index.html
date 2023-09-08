@@ -130,6 +130,19 @@
   <option value="audi">Audi</option>
 </select>
 
+      <script>
+customElements.define('show-hello', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({mode: 'open'});
+    shadow.innerHTML = `<button class="SDbutton" id="class="SDbutton" type="button">Shadow DOM button!</button>
+`;
+  }
+});
+</script>
+
+<show-hello name="John"></show-hello>
+
+
        <iframe src="https://srinivasmyk.github.io/vault/API/PXAPIOps/operations.html" title="OPS" width="100%" height="300" style="border:1px solid black;"></iframe> 
       <div class="header__title">
         <h1>
