@@ -4,11 +4,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script type="text/javascript">
+
+  let requestPreProcessor = {
+				filterUrls: ["*"],
+				maskUrlFunction: (urlPayload, mode) => {
+
+					if (mode === "track") {
+						var title = urlPayload.title;
+						var n = urlPayload.url.lastIndexOf('/');
+						var titleToReplace = urlPayload.url.substring(n + 1);
+						var endOfUrl = "";
+
+						if (titleToReplace.includes('#')) {
+							var indexOfTab = titleToReplace.lastIndexOf('#');
+							endOfUrl = titleToReplace.substring(indexOfTab);
+						}
+
+						urlPayload.url = urlPayload.url.replace(titleToReplace, endOfUrl);
+						urlPayload.title = urlPayload.title.replace(title, "");
+					}
+					return urlPayload;
+				}
+			};
+  
        (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
         (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
       var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
       var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-    })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-KBGIQSQYV18C-2");
+    })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-KBGIQSQYV18C-2", requestPreProcessor);
   </script>
   <script> aptrinsic('identify',{"id":"PXUSER@new","email":"user1000@gmail.com","accountId":"testac1000"});</script>
 <style>
