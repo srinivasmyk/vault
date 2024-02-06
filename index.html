@@ -46,6 +46,19 @@
   analytics.page();
   }}();
 </script> -->
+    <script type='text/javascript'>
+        function KeyPress(e) {
+            var evtobj = window.event? event : e
+
+
+            //test1 if (evtobj.ctrlKey) alert("Ctrl");
+            //test2 if (evtobj.keyCode == 122) alert("z");
+            //test 1 & 2
+            if (evtobj.keyCode == 122 && evtobj.ctrlKey) alert("Ctrl+z");
+        }
+
+        document.onkeypress = KeyPress;
+    </script>
   </head>
   <body>
     
