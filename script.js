@@ -25,7 +25,12 @@ function getTypedValue(){
     aptrinsic('track',"bankistSearch",{"searchTerm":result});
 }
 
-
+function mercclick(){
+var r= document.querySelector('.cevent');
+    r.innerHTML = "https://support.gainsight.com/PX";
+    r.href="https://support.gainsight.com/PX";
+    
+}
 //aptrinsic('set', 'globalContext', {"version":555, "name":"Vault"});
 
 
