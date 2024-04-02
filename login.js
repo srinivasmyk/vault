@@ -101,7 +101,7 @@ function allowuser(form) {
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
             //window.location = "Home.html";
             //aptrinsic('track', 'User Login');
-            form.action = "Home.html";
+            form.action = "index.html";
            alert("Logged in user id :"+b);
            //emailliststore = emaillist.slice();
            //return emailliststore
