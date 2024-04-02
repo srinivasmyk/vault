@@ -64,3 +64,52 @@ var userPassword=document.getElementById('userPassword').value;
     }
  
   };
+
+function allowuser(form) {
+    let a = document.getElementById("userEmail").value;
+    var b="";
+    //if (a ==="srini@gmail.com") {
+      if(a){
+        b= a.substr(0,5);
+        var id = b;
+        //const emaillist= emailliststore.slice();
+        const emaillist=getEmails().slice();
+        //passing user and account objects:
+        if(aptrinsic.init != undefined){
+          if(!emaillist.includes(a)){
+            emaillist.push(a);
+            storeEmailinLocalStorage(a);
+          }
+          var EmailAppend= emaillist.toString()
+        aptrinsic("identify",
+            {
+                //User Fields
+                "id": b, // Required for logged in app users
+                "email": a,
+                "userrole": "Admin",
+                "EmailAppend":EmailAppend
+            
+            },
+            {
+                //Account Fields
+                "id": "GSID-1234", //Required
+                "name": "International Business Machine"
+            });
+          }
+            globalcontext();
+           alert("Valid User");
+            //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
+            //window.location = "Home.html";
+            //aptrinsic('track', 'User Login');
+            form.action = "Home.html";
+           alert("Logged in user id :"+b);
+           //emailliststore = emaillist.slice();
+           //return emailliststore
+
+        
+    }
+    else {
+        alert("Please enter a valid username");
+    }
+    return b;
+}
