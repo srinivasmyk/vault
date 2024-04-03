@@ -87,16 +87,16 @@ function allowuser(form) {
                 "id": "GSID-1234", //Required
                 "name": "International Business Machine"
             });
-          }
+          
            
            alert("Valid User");
            
             //aptrinsic('track', 'User Login');
             form.action = "index.html";
            alert("Logged in user id :"+b);
-
+      }
         
-    }
+    
     else {
         alert("Please enter a valid username");
     }
