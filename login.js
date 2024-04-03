@@ -80,7 +80,7 @@ function validateForm() {
   {
   //User Fields
     "id": email, // Required for logged in app users
-    "email": "srini@gmail.com",
+    "email": email,
     "firstName": email.substr(0,6),
     "lastName": "",
    
