@@ -65,40 +65,30 @@ var userPassword=document.getElementById('userPassword').value;
  
   };
 
-function allowuser(form) {
-    let a = document.getElementById("userEmail").value;
-    var b="";
-    //if (a ==="srini@gmail.com") {
-      if(a){
-        b= a.substr(0,5);
-        var id = b;
+function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var errorElement = document.getElementById('error');
+            var isValid = false;
 
-        aptrinsic("identify",
-            {
-                //User Fields
-                "id": b, 
-                "email": a,
-                "userrole": "Admin",
-                "EmailAppend":EmailAppend
-            
-            },
-            {
-                //Account Fields
-                "id": "GSID-1234", //Required
-                "name": "International Business Machine"
-            });
-          
-           
-           alert("Valid User");
-           
-            //aptrinsic('track', 'User Login');
-            form.action = "index.html";
-           alert("Logged in user id :"+b);
-      }
-        
-    
-    else {
-        alert("Please enter a valid username");
-    }
-    return b;
-}
+            // Simple email validation (can be improved)
+            if (email || email.trim()) {
+                errorElement.innerText = "Please enter your email";
+                aptrinsic('identify', {"id": "ail.c"})
+                isValid = true;
+            } else if (!isValidEmail(email)) {
+                errorElement.innerText = "Please enter a valid email address";
+                isValid = false;
+            } else if (!password || !password.trim()) {
+                errorElement.innerText = "Please enter your password";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        function isValidEmail(email) {
+            // Very basic email validation, can be improved
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
