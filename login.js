@@ -75,7 +75,7 @@ function validateForm() {
             if (email || email.trim()) {
                 errorElement.innerText = "Please enter your email";
                
-                aptrinsic('identify', {"id": "ail.c"});
+                aptrinsic('identify', {"id": email});
                  alert('valid user!!');
                 isValid = true;
             } else if (!isValidEmail(email)) {
