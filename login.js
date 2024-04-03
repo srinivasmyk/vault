@@ -72,7 +72,7 @@ function validateForm() {
             var isValid = false;
 
             // Simple email validation (can be improved)
-            if (email || email.trim()) {
+            if (isValidEmail(email)) {
                 errorElement.innerText = "Please enter your email";
                
               //  aptrinsic('identify', {"id": email});
