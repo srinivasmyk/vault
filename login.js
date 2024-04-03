@@ -74,6 +74,7 @@ function validateForm() {
             // Simple email validation (can be improved)
             if (email || email.trim()) {
                 errorElement.innerText = "Please enter your email";
+                alert('valid user!!')
                 aptrinsic('identify', {"id": "ail.c"})
                 isValid = true;
             } else if (!isValidEmail(email)) {
