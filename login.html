@@ -80,13 +80,13 @@
         <h2 class="modal__header">
           Login to Voult Account<br />
         </h2>
-        <form class="modal__form" id= "login-form" onsubmit="allowuser(this)">
-          <label>Email Address</label>
-          <input id="userEmail" type="email" />
-          <label>Password</label>
-          <input id="userPassword" type="password" />
-          <input  class="btn" value='login' type="submit">
-        </form>
+         <form id="loginForm" onsubmit="return validateForm()">
+        <h2>Login</h2>
+        <div id="error" class="error"></div>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
       </div>
       <div class="overlay hidden"></div>
     
