@@ -72,19 +72,11 @@ function allowuser(form) {
       if(a){
         b= a.substr(0,5);
         var id = b;
-        //const emaillist= emailliststore.slice();
-        const emaillist=getEmails().slice();
-        //passing user and account objects:
-        if(aptrinsic.init != undefined){
-          if(!emaillist.includes(a)){
-            emaillist.push(a);
-            storeEmailinLocalStorage(a);
-          }
-          var EmailAppend= emaillist.toString()
+
         aptrinsic("identify",
             {
                 //User Fields
-                "id": b, // Required for logged in app users
+                "id": b, 
                 "email": a,
                 "userrole": "Admin",
                 "EmailAppend":EmailAppend
@@ -96,15 +88,12 @@ function allowuser(form) {
                 "name": "International Business Machine"
             });
           }
-            globalcontext();
+           
            alert("Valid User");
-            //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
-            //window.location = "Home.html";
+           
             //aptrinsic('track', 'User Login');
             form.action = "index.html";
            alert("Logged in user id :"+b);
-           //emailliststore = emaillist.slice();
-           //return emailliststore
 
         
     }
