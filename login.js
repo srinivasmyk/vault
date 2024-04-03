@@ -75,7 +75,26 @@ function validateForm() {
             if (email || email.trim()) {
                 errorElement.innerText = "Please enter your email";
                
-                aptrinsic('identify', {"id": email});
+              //  aptrinsic('identify', {"id": email});
+                aptrinsic("identify",
+  {
+  //User Fields
+    "id": email, // Required for logged in app users
+    "email": "srini@gmail.com",
+    "firstName": email.substr(0,6),
+    "lastName": "",
+   
+    "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
+    "price" : 95.5,
+    "userHash": "" // optional transient for HMAC identification
+  },
+  {
+  //Account Fields
+    "id":"IBM", //Required
+    "name":"International Business Machine",
+    "Program": "Platinum" // flat custom attributes
+  });
+       
                  alert('valid user!!');
                 isValid = true;
             } else if (!isValidEmail(email)) {
