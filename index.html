@@ -77,6 +77,13 @@
 
 document.onkeydown = KeyPress;
     </script>
+    <script>
+      const myTimeout = setTimeout(myCustomEvent, 10000);
+      function myCustomEvent(){
+        aptrinsic('track','10SecWaitTime',{"stopWaiting?":false})
+      }
+      
+    </script>
   </head>
   <body>
     
