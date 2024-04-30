@@ -225,14 +225,7 @@ document.onkeydown = KeyPress;
     <div class="item">Item 6</div>
   </div>
 </div>
-     customElements.define('show-hello', class extends HTMLElement {
-  connectedCallback() {
-    const shadow = this.attachShadow({mode: 'open'});
-    shadow.innerHTML = `<button class="SDbutton" id="SDbutton" type="button">Shadow DOM button!</button>`;
-  }
-});
-</script>
-
+    
 <show-hello name="John"></show-hello>
 
 
