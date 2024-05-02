@@ -208,6 +208,7 @@ body {
     <button onclick="action5()">Action 5</button>
     <button onclick="action6()">Action 6</button>
   </div>
+    <button class="save" onclick="saveAction()">Save</button>
 
 </div>
 
@@ -238,35 +239,48 @@ body {
         }
     }
 
-    // Actionable Items
+     // Actionable Items
     function action1() {
         // Implement action 1 here
         console.log("Action 1 performed");
+        var button = document.getElementsByClassName("A1")[0];
+        button.classList.add("clicked");
+        
     }
 
     function action2() {
         // Implement action 2 here
         console.log("Action 2 performed");
+         var button = document.getElementsByClassName("A2")[0];
+        button.classList.add("clicked");
     }
 
     function action3() {
         // Implement action 3 here
         console.log("Action 3 performed");
+         var button = document.getElementsByClassName("A3")[0];
+        button.classList.add("clicked");
     }
 
     function action4() {
         // Implement action 4 here
         console.log("Action 4 performed");
+         var button = document.getElementsByClassName("A4")[0];
+        button.classList.add("clicked");
     }
 
     function action5() {
         // Implement action 5 here
         console.log("Action 5 performed");
+         var button = document.getElementsByClassName("A5")[0];
+        button.classList.add("clicked");
     }
 
     function action6() {
         // Implement action 6 here
         console.log("Action 6 performed");
+         var button = document.getElementsByClassName("A6")[0];
+        button.classList.add("clicked");
     }
 </script>
 
