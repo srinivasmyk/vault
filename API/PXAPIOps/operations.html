@@ -182,14 +182,14 @@ body {
             cursor: pointer;
         }
 		 .clicked{
-            background-color: #585858;
+            background-color: #585858 !important;
         }
         .save:hover,
         .save:focus{
-            background-color: #0047BB
+            background-color: #0047BB;
         }
         .save{
-            background-color: #7FA3DD
+            background-color: #7FA3DD;
         }
     </style>
 
@@ -240,6 +240,21 @@ body {
             modal.style.display = "none";
         }
     }
+
+	//save Action logic
+
+	function saveAction(){
+		for(let i = 0; i < 6; i++){
+	var c = document.getElementsByClassName("aBtn")[i];
+	if(c.classList.contains('clicked'))
+	{
+		let text = c.innerText
+		aptrinsic('track','selected_operation',{'op':text})
+	}
+}
+	}
+		closeModal();
+	}
 
 	//check for clicked class
 
