@@ -243,8 +243,14 @@ body {
 
 	//check for clicked class
 
-	function checkClicked{
-		var cl = 
+	function checkClicked(){
+for(let i = 0; i < 6; i++){
+	var c = document.getElementsByClassName("aBtn")[i];
+	if(c.classList.contains('clicked'))
+	{
+		c.classList.remove('clicked')
+	}
+}
 	}
 
      // Actionable Items
@@ -252,7 +258,7 @@ body {
         // Implement action 1 here
         console.log("Action 1 performed");
         console.log(this);
-	    
+	    checkClicked();
         var button = document.getElementsByClassName("A1")[0];
         button.classList.add("clicked");
         
@@ -261,6 +267,8 @@ body {
     function action2() {
         // Implement action 2 here
         console.log("Action 2 performed");
+	    	    checkClicked();
+
          var button = document.getElementsByClassName("A2")[0];
         button.classList.add("clicked");
     }
@@ -268,6 +276,8 @@ body {
     function action3() {
         // Implement action 3 here
         console.log("Action 3 performed");
+	    	    checkClicked();
+
          var button = document.getElementsByClassName("A3")[0];
         button.classList.add("clicked");
     }
@@ -275,6 +285,8 @@ body {
     function action4() {
         // Implement action 4 here
         console.log("Action 4 performed");
+	    	    checkClicked();
+
          var button = document.getElementsByClassName("A4")[0];
         button.classList.add("clicked");
     }
@@ -282,6 +294,8 @@ body {
     function action5() {
         // Implement action 5 here
         console.log("Action 5 performed");
+	    	    checkClicked();
+
          var button = document.getElementsByClassName("A5")[0];
         button.classList.add("clicked");
     }
@@ -289,6 +303,8 @@ body {
     function action6() {
         // Implement action 6 here
         console.log("Action 6 performed");
+	    	    checkClicked();
+
          var button = document.getElementsByClassName("A6")[0];
         button.classList.add("clicked");
     }
