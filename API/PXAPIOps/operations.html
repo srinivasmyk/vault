@@ -134,6 +134,132 @@ body {
   <a href="#contact">Contact</a>
 </div>
 
+	<style>
+        /* Modal Styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .modal-content button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background-color: #f2f2f2;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .modal-content button:hover {
+            background-color: #ddd;
+        }
+        /* Close Button Styling */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+	<button onclick="openModal()">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <button onclick="action1()">Action 1</button>
+    <button onclick="action2()">Action 2</button>
+    <button onclick="action3()">Action 3</button>
+    <button onclick="action4()">Action 4</button>
+    <button onclick="action5()">Action 5</button>
+    <button onclick="action6()">Action 6</button>
+  </div>
+
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByTagName("button")[0];
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Actionable Items
+    function action1() {
+        // Implement action 1 here
+        console.log("Action 1 performed");
+    }
+
+    function action2() {
+        // Implement action 2 here
+        console.log("Action 2 performed");
+    }
+
+    function action3() {
+        // Implement action 3 here
+        console.log("Action 3 performed");
+    }
+
+    function action4() {
+        // Implement action 4 here
+        console.log("Action 4 performed");
+    }
+
+    function action5() {
+        // Implement action 5 here
+        console.log("Action 5 performed");
+    }
+
+    function action6() {
+        // Implement action 6 here
+        console.log("Action 6 performed");
+    }
+</script>
+
 <div style="padding:0 16px">
   <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
   <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
