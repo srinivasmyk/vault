@@ -201,12 +201,12 @@ body {
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <button class="A1" onclick="action1()">Action 1</button>
-    <button class="A2" onclick="action2()">Action 2</button>
-    <button class="A3" onclick="action3()">Action 3</button>
-    <button class="A4" onclick="action4()">Action 4</button>
-    <button class="A5" onclick="action5()">Action 5</button>
-    <button class="A6" onclick="action6()">Action 6</button>
+    <button class="aBtn A1" onclick="action1()">Action 1</button>
+    <button class="aBtn A2" onclick="action2()">Action 2</button>
+    <button class="aBtn A3" onclick="action3()">Action 3</button>
+    <button class="aBtn A4" onclick="action4()">Action 4</button>
+    <button class="aBtn A5" onclick="action5()">Action 5</button>
+    <button class="aBtn A6" onclick="action6()">Action 6</button>
           <button class="save" onclick="saveAction()">Save</button>
 
   </div>
@@ -241,10 +241,18 @@ body {
         }
     }
 
+	//check for clicked class
+
+	function checkClicked{
+		var cl = 
+	}
+
      // Actionable Items
     function action1() {
         // Implement action 1 here
         console.log("Action 1 performed");
+        console.log(this);
+	    
         var button = document.getElementsByClassName("A1")[0];
         button.classList.add("clicked");
         
