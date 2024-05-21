@@ -328,6 +328,42 @@ for(let i = 0; i < 6; i++){
     }
 </script>
 
+
+
+<div class="toggle-container">
+  <button id="toggleBtn">
+    <span id="toggleIcon" class="icon">&#9658;</span>
+    Toggle
+  </button>
+  <div id="toggleContent" class="hidden">
+    This is the content that will be toggled.
+  </div>
+</div>
+<style>.hidden {
+  display: none;
+}
+
+.icon {
+  margin-right: 5px; /* Adjust as needed */
+}
+</style>
+	<script>
+		const toggleBtn = document.getElementById('toggleBtn');
+const toggleIcon = document.getElementById('toggleIcon');
+const toggleContent = document.getElementById('toggleContent');
+
+toggleBtn.addEventListener('click', function() {
+  toggleContent.classList.toggle('hidden');
+  if (toggleContent.classList.contains('hidden')) {
+    toggleIcon.innerHTML = '&#9658;'; // Play icon
+  } else {
+    toggleIcon.innerHTML = '&#9660;'; // Pause icon
+  }
+});
+
+	</script>
+
+
 <div style="padding:0 16px">
   <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
   <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
