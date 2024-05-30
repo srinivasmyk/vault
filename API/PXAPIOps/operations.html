@@ -217,6 +217,53 @@ body {
 
 </div>
 
+	<div id="draggableDiv" class="draggable">
+    <button id="dragButton" class="drag-button">Drag Me</button>
+    <p>This is a draggable div.</p>
+  </div>
+<script>
+// Get the draggable div
+var draggableDiv = document.getElementById('draggableDiv');
+
+// Get the button inside the draggable div
+var dragButton = document.getElementById('dragButton');
+
+var offsetX, offsetY;
+
+// Function to handle mouse down event on the button
+function handleMouseDown(event) {
+  // Calculate the offset of mouse pointer relative to the draggable div
+  offsetX = event.clientX - draggableDiv.getBoundingClientRect().left;
+  offsetY = event.clientY - draggableDiv.getBoundingClientRect().top;
+
+  // Add event listeners for mouse move and mouse up events
+  document.addEventListener('mousemove', handleMouseMove);
+  document.addEventListener('mouseup', handleMouseUp);
+}
+
+// Function to handle mouse move event
+function handleMouseMove(event) {
+  // Calculate the new position of the draggable div
+  var posX = event.clientX - offsetX;
+  var posY = event.clientY - offsetY;
+
+  // Set the new position of the draggable div
+  draggableDiv.style.left = posX + 'px';
+  draggableDiv.style.top = posY + 'px';
+}
+
+// Function to handle mouse up event
+function handleMouseUp() {
+  // Remove event listeners for mouse move and mouse up events
+  document.removeEventListener('mousemove', handleMouseMove);
+  document.removeEventListener('mouseup', handleMouseUp);
+}
+
+// Add event listener for mouse down event on the button
+dragButton.addEventListener('mousedown', handleMouseDown);
+
+	
+</script>
 <script>
     // Get the modal
     var modal = document.getElementById('myModal');
@@ -346,7 +393,28 @@ for(let i = 0; i < 6; i++){
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
   <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
 </div>
-<style>.hidden {
+<style>
+	.draggable {
+  width: 200px;
+  height: 150px;
+  background-color: lightblue;
+  border: 1px solid black;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  cursor: move;
+}
+
+.drag-button {
+  display: block;
+  margin: 10px auto;
+}
+
+
+	
+	
+	
+	.hidden {
   display: none;
 }
 
