@@ -513,7 +513,7 @@ const custName=data+"_data";
         <td>${row.method}</td>
       `;
       tableBody.appendChild(newRow);
-newRow.onload=aptrinsic('track',custName,{'project':row.project,'path':row.path,'method':method});
+newRow.onload=aptrinsic('track',"Global_API_Inventory",{'project':row.project,'path':row.path,'method':method});
 
     });
   }
