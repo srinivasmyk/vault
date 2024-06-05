@@ -506,9 +506,9 @@ toggleBtn.addEventListener('click', function() {
     selectedData.forEach(row => {
       const newRow = document.createElement('tr');
       newRow.innerHTML = `
-        <td>${row.name}</td>
-        <td>${row.age}</td>
-        <td>${row.country}</td>
+        <td>${row.project}</td>
+        <td>${row.path}</td>
+        <td>${row.method}</td>
       `;
       tableBody.appendChild(newRow);
     });
