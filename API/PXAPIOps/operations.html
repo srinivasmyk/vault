@@ -461,22 +461,20 @@ toggleBtn.addEventListener('click', function() {
     font-size: 16px;
     cursor: pointer;
   }
-#myTable{
-	border: 1px solid #ddd;
-}		
+		
 </style>
 </head>
 <body>
 
-<button onclick="showData('data1')">Show Data 1</button>
-<button onclick="showData('data2')">Show Data 2</button>
+<button onclick="showData('data1');aptrinsic('set', 'globalContext', {"API Inventory type" : "Inventory"})">Inventory</button>
+<button onclick="showData('data2');aptrinsic('set', 'globalContext', {"API Inventory type" : "Risk"})"">Risk</button>
 
 <table id="myTable">
   <thead>
     <tr>
-      <th id="name">Name</th>
-      <th id="age">Age</th>
-      <th id="country">Country</th>
+      <th id="project">Project</th>
+      <th id="path">Endpoint Path</th>
+      <th id="method">Method</th>
     </tr>
   </thead>
   <tbody id="tableBody">
@@ -487,15 +485,15 @@ toggleBtn.addEventListener('click', function() {
 <script>
   // Sample data
   const data1 = [
-    { name: "John", age: 30, country: "USA" },
-    { name: "Alice", age: 25, country: "Canada" },
-    { name: "Bob", age: 35, country: "UK" }
+    { project: "test1", path: "/abc/v1", method: "ANY" },
+    { project: "test3", path: "/xyz/v2", method: "POST" },
+    { project: "test5", path: "/sdf/v1", method: "GET" }
   ];
 
   const data2 = [
-    { name: "Emily", age: 28, country: "Australia" },
-    { name: "Michael", age: 40, country: "Germany" },
-    { name: "Sophia", age: 32, country: "France" }
+    { project: "test123", path: "/dfg/v1", method: "PUT" },
+    { project: "test2343", path: "/dfg/v2", method: "UPDATE" },
+    { project: "test455", path: "/ghj/v1", method: "ANY" }
   ];
 
   // Function to display data based on button click
