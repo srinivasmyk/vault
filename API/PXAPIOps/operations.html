@@ -513,7 +513,7 @@ toggleBtn.addEventListener('click', function() {
         <td>${row.method}</td>
       `;
       tableBody.appendChild(newRow);
-newRow.onload=aptrinsic('track','Inventory_data',{'project':row.project},'path':row.path,'method':method);
+newRow.onload=aptrinsic('track','Inventory_data',{'project':row.project,'path':row.path,'method':method});
 
     });
   }
