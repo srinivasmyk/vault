@@ -444,5 +444,79 @@ toggleBtn.addEventListener('click', function() {
   <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
 </div>
 
+<!-- 	changing table -->
+	<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<button onclick="showData('data1')">Show Data 1</button>
+<button onclick="showData('data2')">Show Data 2</button>
+
+<table id="myTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    <!-- Table data will be inserted here -->
+  </tbody>
+</table>
+
+<script>
+  // Sample data
+  const data1 = [
+    { name: "John", age: 30, country: "USA" },
+    { name: "Alice", age: 25, country: "Canada" },
+    { name: "Bob", age: 35, country: "UK" }
+  ];
+
+  const data2 = [
+    { name: "Emily", age: 28, country: "Australia" },
+    { name: "Michael", age: 40, country: "Germany" },
+    { name: "Sophia", age: 32, country: "France" }
+  ];
+
+  // Function to display data based on button click
+  function showData(data) {
+    const tableBody = document.getElementById('tableBody');
+    tableBody.innerHTML = '';
+
+    const selectedData = data === 'data1' ? data1 : data2;
+
+    selectedData.forEach(row => {
+      const newRow = document.createElement('tr');
+      newRow.innerHTML = `
+        <td>${row.name}</td>
+        <td>${row.age}</td>
+        <td>${row.country}</td>
+      `;
+      tableBody.appendChild(newRow);
+    });
+  }
+
+  // Initially show data1
+  showData('data1');
+</script>
+
+	
 </body>
 </html>
