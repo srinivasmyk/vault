@@ -477,7 +477,8 @@ toggleBtn.addEventListener('click', function() {
       <th id="method">Method</th>
     </tr>
   </thead>
-  <tbody id="tableBody">
+	<button >+new</button>
+  <tbody id="tableBody" on>
     <!-- Table data will be inserted here -->
   </tbody>
 </table>
@@ -512,6 +513,8 @@ toggleBtn.addEventListener('click', function() {
         <td>${row.method}</td>
       `;
       tableBody.appendChild(newRow);
+newRow.onload=aptrinsic('track','Inventory_data',{'project':row.project},'path':row.path,'method':method);
+
     });
   }
 
