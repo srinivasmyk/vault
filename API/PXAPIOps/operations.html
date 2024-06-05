@@ -466,8 +466,8 @@ toggleBtn.addEventListener('click', function() {
 </head>
 <body>
 
-<button onclick="showData('data1');aptrinsic('set', 'globalContext', {"API Inventory type" : "Inventory"})">Inventory</button>
-<button onclick="showData('data2');aptrinsic('set', 'globalContext', {"API Inventory type" : "Risk"})"">Risk</button>
+<button onclick="showData('Inventory')">Inventory</button>
+<button onclick="showData('Risk')">Risk</button>
 
 <table id="myTable">
   <thead>
@@ -498,6 +498,7 @@ toggleBtn.addEventListener('click', function() {
 
   // Function to display data based on button click
   function showData(data) {
+	  aptrinsic('set', 'globalContext', {'API Inventory type':data})";
     const tableBody = document.getElementById('tableBody');
     tableBody.innerHTML = '';
 
