@@ -466,8 +466,8 @@ toggleBtn.addEventListener('click', function() {
 </head>
 <body>
 
-<button onclick="showData('Inventory')">Inventory</button>
-<button onclick="showData('Risk')">Risk</button>
+<button onclick="showData('data1')">Inventory</button>
+<button onclick="showData('data2')">Risk</button>
 
 <table id="myTable">
   <thead>
@@ -502,7 +502,7 @@ toggleBtn.addEventListener('click', function() {
     const tableBody = document.getElementById('tableBody');
     tableBody.innerHTML = '';
 
-    const selectedData = data == 'Inventory' ? data1 : data2;
+    const selectedData = data === 'data1' ? data1 : data2;
 
     selectedData.forEach(row => {
       const newRow = document.createElement('tr');
@@ -516,7 +516,7 @@ toggleBtn.addEventListener('click', function() {
   }
 
   // Initially show data1
-  showData('Inventory');
+  showData('data1');
 </script>
 
 	
