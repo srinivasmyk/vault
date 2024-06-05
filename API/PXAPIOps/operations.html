@@ -504,7 +504,7 @@ toggleBtn.addEventListener('click', function() {
     tableBody.innerHTML = '';
 
     const selectedData = data === 'Inventory' ? data1 : data2;
-
+const custName=data+"_data";
     selectedData.forEach(row => {
       const newRow = document.createElement('tr');
       newRow.innerHTML = `
@@ -513,7 +513,7 @@ toggleBtn.addEventListener('click', function() {
         <td>${row.method}</td>
       `;
       tableBody.appendChild(newRow);
-newRow.onload=aptrinsic('track','Inventory_data',{'project':row.project,'path':row.path,'method':method});
+newRow.onload=aptrinsic('track',custName,{'project':row.project,'path':row.path,'method':method});
 
     });
   }
