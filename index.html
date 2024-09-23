@@ -91,7 +91,10 @@ document.onkeydown = KeyPress;
   <body>
     
    <script>aptrinsic('bot', 'search', {labels: ['engagements']});
-     aptrinsic('set', 'globalContext', {"page":"homepage"});
+     const queryString = window.location.search;
+	// const urlParams = new URLSearchParams(queryString);
+	const a= queryString.split('&pid=')[1]
+	        aptrinsic('set', 'globalContext', {"project":"Vault", "page":"home","pid":a});
 </script>
     <div class="navbar">
   <a href="#home">Vault</a>
