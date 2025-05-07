@@ -429,7 +429,7 @@ function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
 })();
 
 //////// modal logic
-var modal = document.getElementById('myModal');
+//var modal = document.getElementById('myModal');
 
 // Function to open the modal
 function openModal() {
