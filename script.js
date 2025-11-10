@@ -432,9 +432,9 @@ function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
 //var modal = document.getElementById('myModal');
 
 // Function to open the modal
-function openModal() {
-  modal.style.display = 'block';
-}
+// function openModal() {
+//   modal.style.display = 'block';
+// }
 
 // Function to close the modal
 function closeModal() {
