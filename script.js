@@ -437,9 +437,9 @@ function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
 // }
 
 // Function to close the modal
-function closeModal() {
-  modal.style.display = 'none';
-}
+// function closeModal() {
+//   modal.style.display = 'none';
+// }
 
 // Close the modal when the user clicks anywhere outside of it
 window.onclick = function(event) {
